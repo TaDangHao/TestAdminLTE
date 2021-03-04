@@ -1,0 +1,16 @@
+<div class="form-filed">
+    <span>{{parenMessage}}</span>
+
+</div>
+<div style="margin-left: 20px;">
+    <ng-container *ngFor="let item of listNewProfile">
+        <div>
+            <span class="item-name">{{item.fullname}} - </span>
+            <span class="item-name">{{item.id_number}} - </span>
+            <span class="item-name">{{item.id_profile}} - </span>
+            <span class="item-name">{{item.number}} - </span>
+            <span class="item-name">{{item.scope}} - </span>
+            <span class="item-name">{{item.status}}</span>
+        </div>
+    </ng-container>
+</div>

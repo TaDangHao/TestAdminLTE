@@ -8,6 +8,11 @@ import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { AccountComponent } from './account/account.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
+import { ParenComponent } from './paren/paren.component';
+import { SiblingComponent } from './sibling/sibling.component';
+import { DataTransmissionService } from './services/data-transmission.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,13 +21,20 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
     MenuComponent,
     FooterComponent,
     AccountComponent,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+    ParenComponent,
+    SiblingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    DataTransmissionService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

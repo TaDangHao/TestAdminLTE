@@ -1,0 +1,15 @@
+<div>
+    <div style="padding-top: 50px;">
+        <div class="form-filed">
+            <span>{{message}}</span>
+        </div>
+        <div class="form-filed">
+            <form [formGroup]="myForm">
+                <input type="text" formControlName="inputCtrl">
+            </form>
+        </div>
+        <div class="form-filed">
+            <button (click)="onClick()">Click me</button>
+        </div>
+    </div>
+</div>
